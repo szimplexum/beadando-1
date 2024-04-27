@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beadandó - Wiki</title>
+    <link rel="stylesheet" href="beadando.css" />
+    <script>
+      let login = false;
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center; color: white">
+        Wiki PROGMATIC - FullStack 2024 - Beadandó feladat
+      </h1>
+    </header>
+    <!-- Felső Menü START-->
+
+    <div class="top_menu_container">
+      <a
+        class="menu"
+        href="https://progmatic.hu/category/programozo-kepzes/page/6/"
+        target="_blank"
+        >PROGMATIC</a
+      >
+      <a class="menu" href="https://www.w3schools.com/css/" target="_blank"
+        >W3school</a
+      >
+      <div class="menu_plusz"></div>
+      <div class="menu right">HU</div>
+      <button class="menu right" onclick="huz()">Log In</button>
+    </div>
+    <div class="space"></div>
+    <div class="main_box">
+      <!-- Felső Menü END -->
+
+      <!--MENÜ box -______________--------------------------  -->
+      <nav class="main_left">
+        Menü
+        <ul>
+          <li>2024-04-11</li>
+          <li>2024-04-13</li>
+          <li>2024-04-15</li>
+          <li>2024-04-17</li>
+          <li>2024-04-18</li>
+          <li>2024-04-20</li>
+          <ul>
+            <li><a href="#tablazat">Táblázat</a></li>
+          </ul>
+          <li>2024-04-22</li>
+          <ul>
+            <li><a href="#flexself">Flexbox self</a></li>
+          </ul>
+          <li>2024-04-24</li>
+          <ul>
+            <li><a href="#towscard">Webshop kártyák</a></li>
+          </ul>
+        </ul>
+      </nav>
+      <!--Eddig tartott a menü box -------------------------  -->
+
+      <!-- Main Box innentől kezdődik  BOX --------------------------------------  -->
+      <div class="main_center">
+        <h1 style="text-align: center">Tartalom típusok bemutatása</h1>
+        <!-- FORM elemek START ---------------------------------------------- -->
+        <section>
+          <div class="section_title">
+            <h2>FORM elemek</h2>
+          </div>
+          <form>
+            <!-- a label az input id és a label for mezője által össze kapcsolja a dolgokat -->
+            <label for="first_name">Kersztnév</label>
+            <!-- input atribútumai: -->
+            <!-- type ma sok szó lesz róla példákon látjátok -->
+            <!-- name ez az üzenet küldéshez kell ez jelöli meg hogy az érték milyen adathoz tartozik -->
+            <!-- placeholder egy ilyen felhasználónak kis help -->
+            <input
+              type="text"
+              name="f_name"
+              id="first_name"
+              placeholder="pl.:Andris"
+            />
+            <br />
+            <!-- radio esetén egy "karika" érték adódik csak tovább -->
+            <!-- azok a radiok felelnek egy inputért amiknek a name atrubútumának értéke megegyezik -->
+            <label for="male">Férfi</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="female">Nő</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="other">Egyéb</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="helikopter">Heli</label>
+            <input type="radio" id="helikopter" name="gender_2" value="heli" />
+            <br />
+            <!-- vagy kivan jelölve vagy nem ez alapján társít hozzá értéket -->
+            <label for="coding">Szeretsz kódolni</label>
+            <input type="checkbox" id="coding" name="coding" value="coding" />
+            <label for="chess">Szeretsz sakkozni</label>
+            <input type="checkbox" id="chess" name="chess" value="chess" />
+            <label for="drive">Szeretsz vezetni</label>
+            <input type="checkbox" id="drive" name="drive" value="drive" />
+            <br />
+            <label for="description">Leírás</label>
+            <textarea name="description" id="description">Lósha</textarea>
+            <br />
+            <label for="hair_color">Hajszín</label>
+            <select name="hair_color" id="hair_color">
+              <option value="brown">Barna</option>
+              <option value="black">Fekete</option>
+              <option value="green">Ződ</option>
+            </select>
+            <br />
+            <!-- elküldi a formom adatait a form atribútumában megfogalmazott helyre -->
+            <input class="button" type="submit" />
+          </form>
+          <datalist id="color">
+            <option value="brown"></option>
+            <option value="black"></option>
+            <option value="green"></option>
+          </datalist>
+          <input type="text" list="color" />
+          <br />
+          <button class="button" type="button" onclick="alert('móka')">
+            Kattints ide
+          </button>
+        </section>
+        <!-- FORM elemek END ---------------------------------------------- -->
+        <!-- Zászó sztart -------------------------- -->
+        <section id="zaszlo">
+          <div class="section_title">
+            <h2>Zászló készítése div segítségével</h2>
+          </div>
+          <p>
+            A zászló CSS segítségével lett létrehozva. 3 div lett készítve,
+            amelyek automatikusan egymás alá helyezkedtek el kitöltve a
+            befoglaló div méretét. A vivek először háttér színnel lettek
+            kitöltve, majd háttér képet kaptak. Az alsó zázló már "inline-blok"
+            megjelenítés miatt került az adott méretre, így már nem tölti ki a
+            befoglaló keret teljes szélességét, hanem saját szélességen marad,
+            ezáltal már egymás mellé rendezhetőek a divek.
+          </p>
+          <div>
+            <div class="cover">
+              <div class="red line"></div>
+              <div class="white line"></div>
+              <div class="green line"></div>
+            </div>
+            <hr />
+            <div class="cover">
+              <div class="green stand"></div>
+              <div class="white stand"></div>
+              <div class="red stand"></div>
+            </div>
+          </div>
+        </section>
+        <!-- Zászó sztart -------------------------- -->
+        <!-- Táblázat START ------------------------ -->
+        <section id="tablazat">
+          <div class="section_title">
+            <h2>Táblázat készítése, formázása</h2>
+          </div>
+          <p>A tálázat 2 fő részből áll: Table head <b>thead</b> és a Table body <b>tbody</b></b>
+          A head részébe több sor is elhelyezhető, ezért érdemes külön kiemelni a head részét,
+        A body része tartalmazza a sorokat <b>tr</b> és soronként a tábla adatokat <b>td</b>.</b>
+      A táblázat színezése a sorok kiválaszásával történik. A fej rész kapott egy színt, mig a táblázat body része csak minden második sorba kapott háttérszínt</p>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Contact</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Valami</td>
+                  <td>Más valami</td>
+                  <td>És a vége</td>
+                </tr>
+                <tr>
+                  <td>Valami</td>
+                  <td>Más valami</td>
+                  <td>És a vége</td>
+                </tr>
+                <tr>
+                  <td>Valami</td>
+                  <td>Más valami</td>
+                  <td>És a vége</td>
+                </tr>
+                <tr>
+                  <td>Valami</td>
+                  <td>Más valami</td>
+                  <td>És a vége</td>
+                </tr>
+                <tr>
+                  <td>Valami</td>
+                  <td>Más valami</td>
+                  <td>És a vége</td>
+                </tr>
+                <tr>
+                  <td>Valami</td>
+                  <td>Más valami</td>
+                  <td>És a vége</td>
+                </tr>
+                <tr>
+                  <td>Valami</td>
+                  <td>Más valami</td>
+                  <td>És a vége</td>
+                </tr>
+                <tr>
+                  <td>Valami</td>
+                  <td>Más valami</td>
+                  <td>És a vége</td>
+                </tr>
+                <tr>
+                  <td>Valami</td>
+                  <td>Más valami</td>
+                  <td>És a vége</td>
+                </tr>
+                <tr>
+                  <td>Valami</td>
+                  <td>Más valami</td>
+                  <td>És a vége</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <!-- Táblázat END ------------------------ -->
+        <!-- FLEXBOX SLEF START  ---------------------------------------------- -->
+        <section id="flexself">
+          <div class="section_title"><h2>Flexbox SELF módosítások</h2></div>
+          <div class="flexbox">
+            <div>1</div>
+            <div><p style="top: 10px">2</p></div>
+            <div style="height: 150px">3</div>
+            <div style="height: 600px"><p style="top: 250px">4</p></div>
+            <div style="height: 40px">5</div>
+            <div class="pink" style="height: 250px">
+              <p style="top: 250px">4</p>
+            </div>
+            <div class="n7 pink" style="height: 50px">7</div>
+            <div style="height: 40px">8</div>
+            <div>9</div>
+          </div>
+        </section>
+        <!-- FLEXBOX SLEF END  ---------------------------------------------- -->
+        <!-- SHOP bemutató START ------------------------------- -->
+        <section id="towscard">
+          <div>
+            <div class="section_title">
+              <h2>Webshop témák megjelenítése</h2>
+            </div>
+            <div id="shop_contanier">
+              <div class="card">
+                <div class="shop_title">Title</div>
+                <div>
+                  <img class="shop_img" src="../rocket.png" alt="" />
+                </div>
+                <div class="shop_info">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi culpa cumque velit odit eos error, delectus ducimus
+                    eveniet, inventore quae distinctio provident magni
+                    perferendis debitis sapiente ullam et quis a!
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="shop_title">Title</div>
+                <div>
+                  <img class="shop_img" src="../rocket.png" alt="" />
+                </div>
+                <div class="shop_info">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi culpa cumque velit odit eos error, delectus ducimus
+                    eveniet, inventore quae distinctio provident magni
+                    perferendis debitis sapiente ullam et quis a!
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="shop_title">Title</div>
+                <div>
+                  <img class="shop_img" src="../rocket.png" alt="" />
+                </div>
+                <div class="shop_info">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi culpa cumque velit odit eos error, delectus ducimus
+                    eveniet, inventore quae distinctio provident magni
+                    perferendis debitis sapiente ullam et quis a!
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="shop_title">Title</div>
+                <div>
+                  <img class="shop_img" src="../rocket.png" alt="" />
+                </div>
+                <div class="shop_info">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi culpa cumque velit odit eos error, delectus ducimus
+                    eveniet, inventore quae distinctio provident magni
+                    perferendis debitis sapiente ullam et quis a!
+                  </p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="shop_title">Title</div>
+                <div>
+                  <img class="shop_img" src="../rocket.png" alt="" />
+                </div>
+                <div class="shop_info">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi culpa cumque velit odit eos error, delectus ducimus
+                    eveniet, inventore quae distinctio provident magni
+                    perferendis debitis sapiente ullam et quis a!
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="shop_title">Title</div>
+                <div>
+                  <img class="shop_img" src="../rocket.png" alt="" />
+                </div>
+                <div class="shop_info">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi culpa cumque velit odit eos error, delectus ducimus
+                    eveniet, inventore quae distinctio provident magni
+                    perferendis debitis sapiente ullam et quis a!
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="shop_title">Title</div>
+                <div>
+                  <img class="shop_img" src="../rocket.png" alt="" />
+                </div>
+                <div class="shop_info">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi culpa cumque velit odit eos error, delectus ducimus
+                    eveniet, inventore quae distinctio provident magni
+                    perferendis debitis sapiente ullam et quis a!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- SHOP bemutató START ------------------------------- -->
+      <!--Eddig tartott a középső, main  BOX --------------------------------------  -->
+
+      <!--JOBB OLDALI BOX --------------------------------------  -->
+      <div class="main_right">
+        JOBB OLDAL <br />
+        <a
+          href="https://github.com/Progmatic-Fullstack-2024/html-css"
+          target="_blank"
+        >
+          gitHub</a
+        >
+        <br />
+        <a href="https://flexboxfroggy.com/#hu" target="_blank"
+          >Flexbox Froggy
+          <img src="flexfroggy.png" alt="Froggie" />
+        </a>
+        <br />
+        <a href="https://caniuse.com/" target="b"
+          >www.caniuse.com
+          <img src="caniuse.png" alt="Can I Use" />
+        </a>
+      </div>
+      <!--Eddig tartott a JOBB OLDAL box -------------------------  -->
+    </div>
+
+    <!-- POP UP -------------------------------   -->
+    <div id="tartalom">
+      <script>
+        function huz() {
+          b = true;
+          if (b) {
+            const beszuras = document.getElementById("tartalom");
+            beszuras.innerHTML = `
+            <div class="popup_bg">
+              <div class="popup text">
+                <h1>Ide írunk tartalmat</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos, a commodi vel adipisci assumenda mollitia asperiores quae distinctio suscipit animi nesciunt reprehenderit. Distinctio eos possimus nostrum saepe repellendus doloribus.</p>
+                <p class="footinfo">bejegyzés: 2010.12.21. andris</p>
+                <button onclick="vissza()">Vissza</button>
+              </div>
+            </div>
+            `;
+          }
+        }
+
+        function vissza() {
+          const beszuras = document.getElementById("tartalom");
+          beszuras.innerHTML = "";
+        }
+      </script>
+    </div>
+    <!-- POP UP -------------------------------   -->
+  </body>
+</html>

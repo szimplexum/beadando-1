@@ -1,0 +1,277 @@
+body {
+  background: rgb(41, 47, 57);
+}
+p {
+  text-align: justify;
+}
+/* top menu start */
+.top_menu_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 960px;
+  height: 50px;
+  padding: 5px 20px;
+  margin: auto;
+  background-color: #0145ac;
+  border-radius: 8px;
+}
+
+.space {
+  height: 20px;
+}
+
+section {
+  padding: 10px;
+}
+
+.menu {
+  background-color: #82c7a5;
+  width: 120px;
+  height: 30px;
+  border: 1px gray solid;
+  align-content: center;
+  text-align: center;
+  margin: 5px;
+  box-shadow: 2px 3px 10px grey;
+  font-weight: 800;
+  color: white;
+  text-shadow: 2px 3px 6px gray;
+}
+.menu:hover {
+  background-color: rgb(56, 182, 98);
+  border: 1px black solid;
+  border-radius: 5px;
+  color: aliceblue;
+  cursor: pointer;
+}
+.menu:active {
+  background-color: rgb(6, 75, 37);
+  margin: 9px;
+  box-shadow: 0px 0px 0px;
+}
+
+.menu_plusz {
+  flex-grow: 1;
+}
+.main_box {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 960px;
+  border: 1px lightgray solid;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px #1b212c;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+.section_title {
+  background-color: #82c7a5;
+  margin: 10px;
+  padding: 0px 10px 0px 10px;
+}
+
+.main_left {
+  width: 500px;
+  height: 300px;
+  min-width: 100px;
+  border: 1px lightslategray dotted;
+  position: sticky;
+  top: 5px;
+  bottom: 10;
+  
+}
+
+.main_right {
+  overflow: hidden;
+  width: 500px;
+  height: 400px;
+  border: 1px lightslategray dotted;
+  justify-self: flex-end;
+  position: sticky;
+  top: 5px;
+  bottom: 10;
+}
+.main_right img {
+  width: 100%;
+}
+
+.main_center {
+  flex-grow: 1;
+  border: 1px lightslategray solid;
+  min-width: 600px;
+  margin: 10px;
+  box-shadow: 5px 5px 20px #0145AC;
+}
+
+/* Zászló alkatrészek START --------------------------------- */
+.cover {
+  display: inline-block;
+  /* width: fit-content;  hasonló a fenti megoldáshoz */
+  border: 1px grey solid;
+    
+}
+.cover:hover {
+  transform: rotate(90deg);
+}
+.line {
+  height: 100px;
+  width: 510px;
+}
+.stand {
+  width: 170px;
+  height: 300px;
+  display: inline-block;
+}
+
+.red {
+  background-color: red;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/008/067/908/small_2x/abstract-red-silk-fabric-realistic-textile-3d-illustration-background-vector.jpg);
+  
+}
+.green {
+  background-color: green;
+  background-image: url(https://t3.ftcdn.net/jpg/06/05/42/04/360_F_605420482_VFqtJ2zsQzSneTEvefRjaWXWuvWGMkth.jpg);
+  
+}
+.white {
+  background-color: beige;
+  background-image: url(https://media.istockphoto.com/id/1059978204/photo/abstract-crumpled-white-light-cream-yellow-wedding-background-with-silk-satin-or-cloth-folds.jpg?s=612x612&w=0&k=20&c=HpxLaESAocvf_6-62Ps5maOkUJnJsZhyg-b0ZF_hPcI=);
+  
+}
+/* Zászló alkatrészek END --------------------------------- */
+/* TÁBLÁZAT START --------------------------------- */
+table,
+td,
+th {
+  border: 1px solid lightgray;
+  height: 30px;
+  border-collapse: collapse;
+  margin: 20px;
+}
+th {
+  background-color: rgb(26, 167, 101);
+}
+th:nth-child(1) {
+  width: 300px;
+}
+th:nth-child(2) {
+  width: 200px;
+}
+th:nth-child(3) {
+  width: 100px;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+tr:nth-child(3n) {
+  border: 1px solid #0145ac;
+}
+/* TÁBLÁZAT START --------------------------------- */
+/* FLEXBOX SELF START ----------------------------------------------*/
+      .flexbox {
+        background-color: burlywood;
+   
+        display: flex;
+        /* flex-direction: row-reverse;
+            flex-wrap: wrap-reverse; */
+        flex-flow: row wrap-reverse;
+        /* sor esetén x tengelyt */
+        justify-content: space-around;
+        /* sor esetén az y tengelyt */
+        align-content: end;
+        align-items: center;
+      }
+
+      .flexbox div {
+
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+        margin: 10px;
+        color: aliceblue;
+        font-size: 40px;
+      }
+      .pink {
+        background-color: pink;
+        align-self: baseline;
+      }
+/* FLEXBOX SELF END ----------------------------------------------*/
+
+/* SHOP start  ---------------------------------------------------------- */
+
+#shop_contanier {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  border: 1px lightslategrey solid;
+  border-radius: 5px;
+  margin: 10px;
+  box-shadow: 2px 3px 10px grey;
+}
+.card:hover {
+  box-shadow: 2px 3px 10px rgb(39, 43, 245);
+}
+.shop_title {
+  text-align: center;
+  font-weight: 800;
+  text-transform: capitalize;
+  height: 40px;
+  align-content: center;
+}
+.shop_img {
+  display: block;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop_info {
+  text-align: justify;
+  margin: 15px;
+}
+/* SHOP end  ---------------------------------------------------------- */
+/* POP UP START -------------------------- */
+
+.popup_bg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 20;
+  background-color: rgba(137, 43, 226, 0.623);
+}
+
+.popup {
+  position: sticky;
+  top: 0;
+  bottom: 10;
+  display: flex;
+  flex-flow: column;
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  z-index: 30;
+  background-color: rgb(6, 50, 170);
+}
+
+.popup.text {
+  padding: 20px;
+  color: azure;
+}
+
+.footinfo {
+  font-size: xx-small;
+  text-align: right;
+  justify-self: flex-end;
+}
+body {
+  margin: 0;
+}
+/* POP UP END -------------------------- */
